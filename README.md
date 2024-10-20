@@ -45,4 +45,4 @@ Please use this type of format to create rule.
 
 3.Then in evaluate section select the rule you want to use then add the candidate information then click on the Evaluate button then you going to redirect of evaluate page where you get the answer whether the candidate is eligible or not. 
 
-Github link- https://github.com/Sumedh5798/Zeotap_assignment_1/tree/master
+GitHub link- https://github.com/Sumedh5798/Zeotap_assignment_1/tree/master
