@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#container{
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main{
+    height: 300px;
+    width: 400px;
+    border: 1px solid black;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

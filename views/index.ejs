@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rule Engine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="upper">
+            <h1>Create Rule</h1>
+            <div id="rule">
+                <form action="/rules/create" method="POST">
+                    <label for="ruleString">RULE</label>
+                    <input type="text" name="ruleString" required>
+                    <button type="submit">Create Rule</button>
+                </form>
+            </div>
+        </div>
+        <div id="lower">
+            <h1>Evaluate Rule</h1>
+            <form action="/rules/evaluate" method="POST" id="lowerEvaluate">
+                <label for="ruleId" id="headlabel">SELECT  RULE</label>
+                <select name="ruleId" required >
+                    <% rules.forEach(function(rule) { %>
+                        <option value="<%= rule._id %>"><%= rule.ruleString %></option>
+                    <% }); %>
+                </select>
+                <div id="ruleEvalute">
+                    <!-- <label for="age">Age:</label> -->
+                    <input type="number" name="age" required placeholder="age">
+<!-- 
+                    <label for="department">Department:</label> -->
+                    <input type="text" name="department" required placeholder="department">
+
+                    <!-- <label for="salary">Salary:</label> -->
+                    <input type="number" name="salary" required placeholder="salary">
+
+                    <!-- <label for="experience">Experience:</label> -->
+                    <input type="number" name="experience" required placeholder="experience">
+
+                    <button type="submit">Evaluate</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

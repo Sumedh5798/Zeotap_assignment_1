@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style1.css">
+</head>
+<body>
+    <div id="container">
+        <div id="main">
+            <form action="/rules/evaluate">
+                <% if (name=='Candidate is eligible') { %>
+                    <span style="color: green;font-size: 30px; font-weight: 600;",><%= name %></span>
+                <% }else{%>
+                    <span style="color: red; font-size: 30px; font-weight: 600;"><%= name %></span>
+                <%}%>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
